@@ -60,7 +60,7 @@ function Signup() {
         setLoading(true);
         setError("");
         await signup(emailRef.current.value, passwordRef.current.value);
-        navigate("/Dashboard")
+        navigate("/dashboard")
       } catch(err){
         console.log(err)
         setError("Failed to create an account")

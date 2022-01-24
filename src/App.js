@@ -6,6 +6,7 @@ import Signup from './component/Signup/Signup'
 import { AuthProvider } from './contexts/AuthContext'
 import Dashboard from './component/Dashboard/Dashboard'
 
+
 function App() {
     return (
         <div>

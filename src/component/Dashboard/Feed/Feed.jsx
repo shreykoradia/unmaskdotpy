@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useState , useEffect} from 'react';
 import {Typography} from '@material-ui/core'
 import './feed.css'
+import Postbox from './Postbox';
+import Post from '../Post/Post.js'
+import db from '../../../firebase'
+import { collection } from "firebase/firestore";
+
 
 function Feed() {
   return (
@@ -8,14 +13,13 @@ function Feed() {
     <div className="feed">
     {/* header */}
     <div className="header">
-    <Typography paragraph={false} align="left" gutterBottom={true} variant="overline" noWrap={false}>Home</Typography>
+    <Typography paragraph={false} align="left" gutterBottom={true} variant="h6" noWrap={true}>Home</Typography>
     </div>
 
     {/* Post box for Q&A */}
-
-
-    {/* Posts  */}
-      <h5>THis section has post exactly like reddits</h5>
+      <Postbox />  
+     {/* Posts  */}
+    
     {/* Posts  */}
     {/* Posts  */}
     {/* Posts  */}
