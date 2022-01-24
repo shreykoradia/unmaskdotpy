@@ -1,0 +1,8 @@
+.dashboard{
+    display: flex;
+    height: 100vh;
+    max-width: 81.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}

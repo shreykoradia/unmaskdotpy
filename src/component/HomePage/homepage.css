@@ -1,0 +1,21 @@
+.div{
+    max-height: 100vh;
+    max-width: 100vw;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.brand-name{
+    font-family: Impact, Haettenschweiler, sans-serif;
+    font-size: 50px;
+    font-weight:200;
+    margin-bottom: 10%;
+    
+    
+}
+
+
+
+

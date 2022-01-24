@@ -1,0 +1,23 @@
+.feed{
+    flex: 0.6;
+    border-right: 1px solid whitesmoke;
+    overflow-y: scroll;
+}
+.feed::-webkit-scrollbar{
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.feed {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+.header{
+
+    position: sticky;
+    top: 0;
+    /* background-color: white; */
+    z-index: 100;
+    border:1px solid none ;
+    padding: 1rem 2rem;
+}

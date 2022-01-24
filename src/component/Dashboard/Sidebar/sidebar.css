@@ -1,0 +1,31 @@
+.sidebar{
+    border-right: 1px solid whitesmoke;
+    flex: 0.1;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.sidebar-button{
+    display: flex !important;
+    justify-content: flex-start !important;
+    padding: 1rem !important;
+    margin-left: 50% !important;
+    font-size: 1.5rem !important;
+    max-width:fit-content !important;
+    outline: none !important;
+
+}
+.brandname{
+    font-size: 1.5rem !important;
+    margin-left: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.sidebar-button:hover{
+    background-color: transparent !important;
+}
+ .icons:hover{
+    color: #1DA1F2;
+
+}
+
