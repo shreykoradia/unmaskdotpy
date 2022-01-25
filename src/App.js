@@ -6,7 +6,7 @@ import Signup from './component/Signup/Signup'
 import { AuthProvider } from './contexts/AuthContext'
 import Dashboard from './component/Dashboard/Dashboard'
 import Explore from './component/Dashboard/Explore/Explore'
-
+import Profile from './component/Dashboard/Profile/Profile'
 
 function App() {
     return (
@@ -18,6 +18,8 @@ function App() {
                     <Route path="/signup"  element={<Signup />} />
                     <Route path="/dashboard"  element={<Dashboard />} />
                     <Route path="/explore"  element={<Explore />} />
+                    <Route path="/profile"  element={<Profile />} />
+                    
                 </Routes>
                 </AuthProvider>
 
