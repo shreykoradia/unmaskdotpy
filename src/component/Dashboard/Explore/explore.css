@@ -1,0 +1,25 @@
+.explore
+{
+    cursor: pointer;
+    user-select: none;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.explore-search{
+    padding: 3%;
+}
+
+.topics{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5% !important;
+    padding: 3% !important;
+}
+

@@ -6,6 +6,7 @@ import { MdSend} from "react-icons/md";
 import { MdCollections} from "react-icons/md";
 import { collection,  addDoc } from 'firebase/firestore';
 import db from '../../../firebase'
+import { useAuth } from '../../../contexts/AuthContext';
 
 
 const useStyles = makeStyles({
@@ -27,13 +28,15 @@ const useStyles = makeStyles({
 });
 export default function Postbox() {
 
+         const {currentUser} = useAuth()
+
         const [postMessage , setPostMessage] = useState('');
 
             const sendPost = async e=>{
             try {
                 const docRef = await addDoc(collection(db, "posts"), {
-                    displayName:'Shrey',
-                    username: 'shrey',
+                    displayName:currentUser.email,
+                    username:currentUser.uid,
                     verified: 'true',
                     text: postMessage,
                     image:'',

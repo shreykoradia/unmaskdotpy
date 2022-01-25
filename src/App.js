@@ -5,6 +5,7 @@ import Login from './component/Login/Login.jsx'
 import Signup from './component/Signup/Signup'
 import { AuthProvider } from './contexts/AuthContext'
 import Dashboard from './component/Dashboard/Dashboard'
+import Explore from './component/Dashboard/Explore/Explore'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup"  element={<Signup />} />
                     <Route path="/dashboard"  element={<Dashboard />} />
+                    <Route path="/explore"  element={<Explore />} />
                 </Routes>
                 </AuthProvider>
 
