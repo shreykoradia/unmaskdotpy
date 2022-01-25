@@ -5,11 +5,26 @@ function Widgets() {
   return(
    <>
    <div className="widgets">
-   <Grid container direction={"column"} spacing={2} justifyContent='center' alignItems='center'>  
+   <Grid container direction={"column"} spacing={2} justifyContent='center' alignItems='center'>
    <Grid item>
      <Typography gutterBottom variant="h6">Widgets</Typography>
    </Grid>
    <Grid item>
+   <Paper  elevation={0}>
+        <Typography gutterBottom variant="h5">
+        What is CodeStack ?
+        </Typography>
+        <Typography variant="overline">
+          A place where programmers get their solution to their thoughts , Code-Reviews , Hackathons , Roadmap to Development journey and 
+          Open-Source projects !  
+         </Typography>
+        <Grid item>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+        </Grid>
+    </Paper >
+   </Grid>
+  <Grid item>
    <Paper elevation={0} >
         <Typography gutterBottom variant="h5">
           CodeStack Docs 

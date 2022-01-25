@@ -61,7 +61,7 @@ function Feed() {
      username="kevininstagram"
      verified="true"
      text="We have won the World Championship  !"
-     image=""
+     image=" "
      avatar=" "
 
      />
@@ -75,13 +75,6 @@ function Feed() {
      avatar=" "
 
      />
-    {/* Posts  */}
-    {/* Posts  */}
-    {/* Posts  */}
-    {/* Posts  */}
-    {/* Posts  */}
-    {/* Posts  */}
-    {/* Posts  */}
     </div>
   </>
 
