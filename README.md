@@ -17,7 +17,7 @@ You may also see any lint errors in the console.
 ### Features to be added 
 
 Logout 
-Uodation on profile 
+Updation on profile 
 Username updation and removal  
  hackathon suggestion and Hackathon Page 
  Code-Review Page 
