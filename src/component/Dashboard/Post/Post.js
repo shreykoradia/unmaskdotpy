@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import "./Post.css";
-import { Avatar } from "@material-ui/core";
+import { Avatar , Button } from "@material-ui/core";
 import { MdBookmark } from "react-icons/md";
 import { MdThumbUpOffAlt } from "react-icons/md";
 import { MdThumbDownOffAlt } from "react-icons/md";
@@ -20,13 +20,14 @@ const Post = forwardRef(
         <div className="post__body">
           <div className="post__header">
             <div className="post__headerText">
-              <h3>
+              <h4>
                 {displayName}{" "}
                 <span className="post__headerSpecial">
-                  {verified && <RiMedal2Line className="post__badge" />} @
-                  {username}
+                {verified && <RiMedal2Line className="post__badge" />}{" "}
+                  @{username}
+                  
                 </span>
-              </h3>
+              </h4>
             </div>
             <div className="post__headerDescription">
               <p>{text}</p>
@@ -34,10 +35,10 @@ const Post = forwardRef(
           </div>
           <img src={image} alt="" />
           <div className="post__footer">
-            <MdBookmark fontSize="small" />
-            < MdThumbUpOffAlt fontSize="small" />
-            < MdThumbDownOffAlt fontSize="small" />
-            < MdShortcut fontSize="small" />
+            <Button><MdBookmark /></Button>
+             <Button>< MdThumbUpOffAlt /></Button>          
+            <Button>< MdThumbDownOffAlt /></Button>
+           <Button>< MdShortcut  /></Button> 
           </div>
         </div>
       </div>

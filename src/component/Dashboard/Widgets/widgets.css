@@ -1,0 +1,18 @@
+.widgets {
+    flex: 0.3;
+    overflow-y: scroll !important;
+    cursor: pointer;
+    user-select: none;  
+    max-width:100% !important;
+    margin-top: 2%;
+    padding: 1rem;
+}
+
+.widgets::-webkit-scrollbar{
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.widgets {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }

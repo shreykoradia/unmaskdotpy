@@ -1,7 +1,9 @@
 .feed{
     flex: 0.6;
-    border-right: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;     
     overflow-y: scroll;
+    cursor: pointer;
+    user-select: none;
 }
 .feed::-webkit-scrollbar{
     display: none;
@@ -13,8 +15,8 @@
   }
 
 .header{
-    margin-top: 1rem;
-    position: sticky;
+    margin-top: 2rem;
+    /* position: sticky; */
     top: 0;
     /* background-color: white; */
     z-index: 100;
