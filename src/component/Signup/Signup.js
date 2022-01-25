@@ -64,6 +64,7 @@ function Signup() {
       } catch(err){
         console.log(err)
         setError("Failed to create an account")
+
       }
   
       setLoading(false)

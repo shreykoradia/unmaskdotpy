@@ -1,9 +1,12 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import { Avatar , Button , Box , TextField  ,makeStyles} from '@material-ui/core';
 import './postbox.css'
 import { RiBarChartGroupedLine } from "react-icons/ri";
 import { MdSend} from "react-icons/md";
 import { MdCollections} from "react-icons/md";
+import { collection,  addDoc } from 'firebase/firestore';
+import db from '../../../firebase'
+
 
 const useStyles = makeStyles({
     root: {
@@ -22,8 +25,26 @@ const useStyles = makeStyles({
 
     
 });
+export default function Postbox() {
 
-function Postbox() {
+        const [postMessage , setPostMessage] = useState('');
+
+            const sendPost = async e=>{
+            try {
+                const docRef = await addDoc(collection(db, "posts"), {
+                    displayName:'Shrey',
+                    username: 'shrey',
+                    verified: 'true',
+                    text: postMessage,
+                    image:'',
+                    avatar: ''
+                });
+                console.log("Document written with ID: ", docRef.id);
+              } catch (e) {
+                console.error("Error adding document: ", e);
+              }
+              
+            }
     const classes = useStyles();
   return (
             <>
@@ -35,15 +56,17 @@ function Postbox() {
                         }}
                     >
                     <Avatar className="avatar" src ="#"  />
-                    <TextField placeholder='Hold a Thought, Post it !'  fullWidth id="fullWidth" />
+                    <TextField placeholder='Hold a Thought, Post it !'  fullWidth id="fullWidth" 
+                    onChange={(e) => setPostMessage(e.target.value)} 
+                    value={postMessage}
+                    />
                     <Button variant='text' type='submit'><MdSend /></Button>
                     <Button variant='text' type='submit'><MdCollections /></Button>
                     <Button variant='text' type='submit'>< RiBarChartGroupedLine /></Button>
-                    <Button id="button2" variant="outlined" type='submit'size='small' className={classes.root}>Post</Button>
+                    <Button id="button2" variant="outlined" type='submit'size='small' className={classes.root} onClick={sendPost}>Post</Button>
                      </Box>
                     </div>
         </>
-  )
+     )
 }
 
-export default Postbox;

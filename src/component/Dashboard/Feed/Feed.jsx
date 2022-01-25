@@ -4,10 +4,24 @@ import './feed.css'
 import Postbox from './Postbox';
 import Post from '../Post/Post.js'
 import db from '../../../firebase'
+import { collection , onSnapshot } from 'firebase/firestore';
 
 
 
 function Feed() {
+
+      const [posts , setPosts] = useState([]);
+
+      useEffect(() =>{
+        const q = collection(db ,"posts")
+         onSnapshot(q, (snapshot) =>(
+          setPosts(snapshot.docs.map(doc => doc.data()))
+        ));
+      },[]);
+
+
+     
+
   return (
   <>
     <div className="feed">
@@ -19,27 +33,32 @@ function Feed() {
     {/* Post box for Q&A */}
       <Postbox />  
      {/* Posts  */}
+      {posts.map((post) => (
+        <Post
+          key={post.text}
+          displayName={post.displayName}
+          username={post.username}
+          verified={post.verified}
+          text={post.text}
+          avatar={post.avatar}
+          image={post.image}
+        />
+      ))}
+
+
      <Post 
      displayName="codestack"
      username="test12"
-     verified="true"
+     verified={true}
      text="hello my first post !"
      image=""
      avatar=" "
 
      />
-     <Post 
-     displayName="Shrey"
-     username="shrey12"
-     verified="true"
-     text="Blah Blah blah  !"
-     image=""
-     avatar=" "
 
-     />
     <Post 
-     displayName="Max Verstappen"
-     username="maxredbull"
+     displayName="Kevin Systrom"
+     username="kevininstagram"
      verified="true"
      text="We have won the World Championship  !"
      image=""
@@ -50,7 +69,7 @@ function Feed() {
      <Post 
      displayName="Mark Zuckerberg"
      username="mark"
-     verified="true"
+     verified={false}
      text="You did a cool Job shrey!"
      image=""
      avatar=" "

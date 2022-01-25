@@ -43,7 +43,7 @@ const firebaseConfig = {
 // Initialize Firebase
  export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
- const db = getDatabase(app);
+ const db = getFirestore(app);
  export default db
 
 // this project is going to be delted so do not worry API KEYS WONT MATTER

@@ -10,7 +10,7 @@ function Widgets() {
      <Typography gutterBottom variant="h6">Widgets</Typography>
    </Grid>
    <Grid item>
-   <Paper variant='string' elevation={0} square="true">
+   <Paper elevation={0} >
         <Typography gutterBottom variant="h5">
           CodeStack Docs 
         </Typography>
@@ -25,7 +25,7 @@ function Widgets() {
     </Paper >
    </Grid>
    <Grid item>
-   <Paper variant='string' elevation={0} square="true">
+   <Paper elevation={0} >
         <Typography gutterBottom variant="h5">
           How to Open Source ?? 
         </Typography>
@@ -39,7 +39,7 @@ function Widgets() {
     </Paper >
    </Grid>
    <Grid item>
-   <Paper variant='sting' elevation={0} square="true">
+   <Paper  elevation={0}>
         <Typography gutterBottom variant="h5">
         How to get in touch for any queries ?
         </Typography>
