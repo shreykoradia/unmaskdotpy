@@ -14,6 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### Features to be added 
+
+Logout 
+Uodation on profile 
+Username updation and removal  
+ hackathon suggestion and Hackathon Page 
+ Code-Review Page 
+
 
 ### Authenticating ?
 
@@ -26,3 +34,5 @@ As this is in development phase you will not find any user interaction other tha
 ### is the app mobile responsive 
 
 We are working on it but the app currently support some modes of responsiveness but yet to be fully responsive 
+
+
