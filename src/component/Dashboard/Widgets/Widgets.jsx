@@ -12,7 +12,7 @@ function Widgets() {
    <Grid item>
    <Paper  elevation={0}>
         <Typography gutterBottom variant="h5">
-        What is CodeStack ?
+        What is Hackathon Fleet  ?
         </Typography>
         <Typography variant="overline">
           A place where programmers get their solution to their thoughts , Code-Reviews , Hackathons , Roadmap to Development journey and 
@@ -27,10 +27,10 @@ function Widgets() {
   <Grid item>
    <Paper elevation={0} >
         <Typography gutterBottom variant="h5">
-          CodeStack Docs 
+          Hackathon Fleet Docs 
         </Typography>
         <Typography variant="overline">
-          The docs contains the open source documentation of the CodeStack web-application Built on React-Js
+          The docs contains the open source documentation of the Hackathon Fleet web-application Built on React-Js
           and Firebase it is still in progress hang on for the more updates  
         </Typography>
         <Grid item>

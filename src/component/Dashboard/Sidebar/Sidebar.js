@@ -10,8 +10,8 @@ import './sidebar.css'
 function Sidebar() {
     return (
         <div className='sidebar'>
-            {/* CodeStack Name  */}
-            <Typography variant="overline"  className='brandname'>CodeStack</Typography>
+            {/* Hackathon Fleet Name  */}
+            <Typography variant="overline"  className='brandname'>Hack Fleet</Typography>
             {/* SidebarOption home  */}
             <Tooltip title="Home"><Button variant="text" className='sidebar-button' component={Link} to="/dashboard"><FiHome className='icons' /></Button></Tooltip>
             {/* SidebarOption explore */}

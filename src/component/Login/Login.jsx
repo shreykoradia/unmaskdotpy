@@ -69,11 +69,11 @@ function Login() {
         <div style={styles}>
             <Grid container direction={"column"} spacing={1} justifyContent='center' alignItems='center' >
             <Grid item>
-            <Typography   paragraph={false} align="left" gutterBottom={true} variant="h4" noWrap={false}>CodeStack</Typography>
+            <Typography   paragraph={false} align="left" gutterBottom={true} variant="h4" noWrap={false}>Hackathon Fleet</Typography>
             </Grid>
              <Grid item>
              <Typography   paragraph={true} align="center" gutterBottom={true} variant="overline" noWrap={false}>
-                Be the 1% of the 1% , Codestack where code is the chaos ! 
+                Be the 1% of the 1% , Hackathon Fleet where code is the chaos ! 
             </Typography>
             </Grid>  
              {error && <Alert  size="small"variant="standard" severity="error">{error}</Alert>} <br /> 

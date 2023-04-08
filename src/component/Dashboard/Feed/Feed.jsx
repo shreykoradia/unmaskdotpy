@@ -47,7 +47,7 @@ function Feed() {
 
 
      <Post 
-     displayName="codestack"
+     displayName="Hackathon Fleet"
      username="test12"
      verified={true}
      text="hello my first post !"

@@ -7,7 +7,7 @@ import Buttons from './Buttons'
 function Homepage() {
     return (
         <div>  
-           <p className="brand-name">CodeStack</p>
+           <p className="brand-name">Hackathon Fleet</p>
             <Body />
             <Buttons />
             

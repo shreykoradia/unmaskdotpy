@@ -76,7 +76,7 @@ function Signup() {
         <div style={styles}>  
             <Grid container direction={"column"} spacing={1} justifyContent='center' alignItems='center' >
             <Grid item>
-            <Typography   paragraph={false} align="left" gutterBottom={true} variant="h4" noWrap={false}>CodeStack</Typography>
+            <Typography   paragraph={false} align="left" gutterBottom={true} variant="h4" noWrap={false}>Hackathon Fleet</Typography>
             </Grid>
              <Grid item>
              <Typography   paragraph={true} align="center" gutterBottom={true} variant="overline" noWrap={false}>
